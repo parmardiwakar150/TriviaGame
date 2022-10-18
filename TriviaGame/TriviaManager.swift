@@ -55,7 +55,7 @@ class TriviaManager: ObservableObject {
     }
     func setQuestion() {
         answerSelected = false
-        progress = CGFloat(Double((index + 1)) / Double(length) * 100)
+        progress = CGFloat(Double((index + 1)) / Double(length) * 350)
         if index < length {
             let currentQuestion = trivia[index]
             question = currentQuestion.formattedQuestion

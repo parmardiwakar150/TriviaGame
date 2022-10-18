@@ -20,7 +20,7 @@ struct QuestionView: View {
                     .fontWeight(.heavy)
                 
             }
-            ProgressBar(progress: 40)
+            ProgressBar(progress: triviaManager.progress)
             VStack(alignment: .leading, spacing: 20) {
                 Text(triviaManager.question)
                     .font(.system(size: 20))
